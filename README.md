@@ -191,7 +191,15 @@ Khai báo vào file cấu hình /etc/fstab để khi restart server, hệ thốn
 
 **Cài đặt GlusterFS:**
 
-`# apt-get install glusterfs-server`
+`# yum install centos-release-gluster -y`
+
+`# yum install epel-release -y`
+
+`# yum install glusterfs-server`
+
+`# systemctl start glusterd`
+
+`# systemctl start enable`
 
 **Add 1 node có địa chỉ là 10.145.37.92 vào pool (đang ở trên server 10.145.37.90)**:
 
